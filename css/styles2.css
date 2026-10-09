@@ -1,0 +1,120 @@
+/* Reseteo y estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #222222;
+}
+
+/* Encabezado principal (Header) */
+header {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px 40px;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* Barra de navegación centrada */
+nav {
+    background-color: #333333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de las tarjetas en distribución horizontal */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Tarjetas (Cards) con bordes redondeados */
+section, .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2, .card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+section p, .card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* Botones de las tarjetas */
+section button,
+section .btn,
+.card button,
+.card .btn {
+    display: inline-block;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section button:hover,
+section .btn:hover,
+.card button:hover,
+.card .btn:hover {
+    background-color: #444444;
+}
+
+/* Pie de página (Footer) */
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
